@@ -1,18 +1,18 @@
+[toolchain]
+
 [features]
 seeds = false
 skip-lint = false
 
-[programs.localnet]
-hades_payment = "GMT6onsr3dc3sMV3Yy68PAdaPqLZvi8LrjApQBFP6BXU"
+[programs.devnet]
+sol_payment = "8ZeCdtsSJmZRDVYtrdtNLhPRQckmjDwcFy2iELkr2XZA"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
-wallet = "/home/administrator/.config/solana/id.json"
-
+cluster = "devnet"
+wallet = "/root/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
-client = "yarn run ts-node client/*.ts"

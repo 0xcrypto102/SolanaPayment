@@ -1,12 +1,12 @@
 [package]
-name = "hades-payment"
+name = "sol_payment"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "hades_payment"
+name = "sol_payment"
 
 [features]
 no-entrypoint = []
@@ -19,6 +19,7 @@ default = []
 resolver = "2"
 
 [dependencies]
-anchor-lang = "0.29.0"
+anchor-lang = { version = "0.29.0", features = ["init-if-needed"] }
 anchor-spl = "0.29.0"
+spl-token = "4.0.1"
 solana-program = "1.16.24"
