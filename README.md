@@ -5,7 +5,7 @@
 - Add or remove authorized address
 - Using PDA as vault to save funds in the contract
 
-  ## How to build
+## How to build
 
        anchor build
 
