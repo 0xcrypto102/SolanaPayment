@@ -4,14 +4,15 @@
 - Withdraw by authorized address
 - Add or remove authorized address
 - Using PDA as vault to save funds in the contract
-  
+
   ## How to build
 
-     anchor build
+       anchor build
 
-  ## How to deploy
+ # How to deploy
 
-     anchor deploy
+       anchor deploy
 
- ## Unite Test
- anchor run test
+## Unite Test
+
+      anchor run test
